@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="../main.js"></script>
+
+    <title>login</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<style>
+    :root {
+        --primary-color: #111317;
+        --primary-color-light: #1f2125;
+        --primary-color-extra-light: #35373b;
+        --secondary-color: #AFDDE5;
+        --secondary-color-dark: #0FA4AF;
+        --text-light: #d1d5db;
+        --white: #ffffff;
+        --max-width: 1200px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 10rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--secondary-color);
+        padding: 3rem;
+        height: 35rem;
+        width: 25rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    form p {
+        font-weight: 500;
+        color: #190606;
+        opacity: 0.7;
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: 7px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    form a {
+        text-decoration: none;
+        color: #0c0404;
+        font-size: 15px;
+    }
+
+    form a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    #need {
+        float: right;
+        margin-bottom: 1rem;
+        margin-right: 7px;
+    }
+
+    #need:hover {
+        text-decoration: underline;
+        color: black;
+
+    }
+
+    form a:hover {
+        text-shadow: 2px 2px 6px #d8cfcf;
+    }
+
+    form a:active {
+        text-shadow: none;
+    }
+
+    form input {
+        background: transparent;
+        width: 17rem;
+        padding: 1em;
+        margin-bottom: 2em;
+        border: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5000px;
+        backdrop-filter: blur(5px);
+        box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        font-family: poopins;
+        transition: all 0.2s ease-in-out;
+    }
+
+    form input::placeholder {
+        color: white;
+    }
+
+    form input:hover {
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    form input[type=email]:focus,
+    form input[type=password]:focus {
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    form input[type=button] {
+        margin-top: 10px;
+        width: 150px;
+        font-size: 1rem;
+    }
+
+    form input[type=submit] {
+        width: 140px;
+    }
+
+    form input[type=button]:hover {
+        cursor: pointer;
+    }
+
+    form input[type=button]:active {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    form:hover {
+        margin: 4px;
+    }
+</style>
+<link rel="stylesheet" href="/css/index.css">
+
+<body>
+    <header>
+        <img class="logo" src="/img/logo.png" alt="">
+        <nav class="navbar">
+            <a href="/Resume/main.html">Tool</a>
+            <a href="/blogpage/blog.html">Pricing</a>
+            <a href="/Accordation page/FAQs.html">FAQs</a>
+        </nav>
+<h1>Logged in as</h1>
+<h2 id="usernName"></h2>
+<h2 id="userEmail"></h2>
+<img id="userProfilePicture">
+
+        <div class="header-button">
+            <button id="LOGIN"><a href="/signup or login/login.html">Log in</a></button>
+            <button id="SIGNUP"><a href="/signup or login/signup.html">Sign Up</a></button>
+            
+        </div>
+    </header>
+    <div class="container">
+        <form action="">
+            <p> Log in</p><br>
+            <a id="need" href="/signup or login/signup.html">Need an Account?</a><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="password" value="" id="myInput" placeholder="Password" required><br>
+            <input type="submit" value="Login"><br>
+            <button id="google-login-btn">Login with Google</button><br>
+            <a href="/signup or login/resetpas.html">Forget Password</a><br>
+        </form>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="row">
+                <ul>
+
+                    <img src="/img/logo.png" alt="logo" style="height: 100px;
+                        width: 150px;">
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Resources</h6>
+                    <li>
+                        <a href="/Resume/main.html">Resume</a>
+                    </li>
+                    <li><a href="/Resume/main.html">CV</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Product</h6>
+                    <li>
+                        <a href="/pricing page/pricing.html">Price</a>
+                    </li>
+                    <li> <a href="/Reviews/reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Support</h6>
+                    <li><a href="/contactpage/contactus.html">Contact Us</a></li>
+                    <li>
+                        <a href="/privacy/privacy.html">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last_para">
+            <p>&copy; 2024 Chaudhary Brothers & company. All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<!-- <script>
+    function myFunction() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script> -->
+
+</html>

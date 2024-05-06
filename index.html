@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <script defer type="module" src="./main.js"></script> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>OR | MAKER</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <img class="logo" src="/img/logo.png" alt="">
+        <nav class="navbar">
+            <a href="/Resume/main.html">Tool</a>
+            <a href="/pricing page/pricing.html">Pricing</a>
+            <a href="/Accordation page/FAQs.html">FAQs</a>
+        </nav>
+        <div class="header-button">
+            <button id="LOGIN"><a href="/signup or login/login.html">Log in</a></button>
+            <button id="SIGNUP"><a href="/signup or login/signup.html">Sign Up</a></button>
+        </div>
+    </header>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="/img/slider img/slide1.jpg" style="width:100%">
+            <div class="text">
+                <h3>Elevate the search for your next career</h3> <br>Our tools help you from creating a
+                professional resume, and sending your first letter to finding <br> job listings and keeping track of
+                your
+                applications.
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="/img/slider img/slider2.jpg" style="width:100%">
+            <div class="text">
+                <h3>Elevate the search for your next career</h3> <br>Our tools help you from creating a
+                professional resume, and sending your first letter to finding <br> job listings and keeping track of
+                your
+                applications.
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="/img/slider img/slider3.jpg" style="width:100%">
+            <div class="text">
+                <h3>Elevate the search for your next career</h3> <br>Our tools help you from creating a
+                professional resume, and sending your first letter to finding <br> job listings and keeping track of
+                your
+                applications.
+            </div>
+        </div>
+        <button id="start"><a href="/Resume/main.html">Start Now</a></button>
+    </div>
+    <!-- Card section -->
+    <div class="card_heading">
+        <h2>Get ahead of the competition</h2>
+        <p>Make your job applications stand-out from other candidates.</p>
+
+    </div>
+    <div class="card_section">
+        <div class="card">
+            <h3>Create Resume</h3>
+            <p>Fill in the blanks, choose a template, and download your resume instantly.</p>
+        </div>
+        <div class="card">
+            <h3>Compose letter</h3>
+            <p>Strengthen your bond with your community of fans and deepen your connections..</p>
+        </div>
+        <div class="card">
+            <h3>Find Jobs</h3>
+            <p>Find jobs according to your skills</p>
+        </div>
+    </div>
+    <!-- Login Notice -->
+    <section class="notice_section">
+        <div class="notice_pic">
+            <img src="/img/login notice section/hero-with-features-feat-1.svg" alt="login">
+        </div>
+        <div class="notice_para">
+            <h3>Log in to make it personal</h3>
+            <p>Sign in with your Facebook account to discover tools recommended for you. If you’re new
+                here, learn how to set up your Facebook account and begin your creator journey.</p>
+            <div class="button">
+                <button id="login"><a href="/signup or login/login.html">Log in</a></button>
+                <button id="start"><a href="/signup or login/signup.html">Get Started</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- START building section -->
+    <section class="blog">
+        <div class="blog_pic">
+            <img src="/img/cv-template.jpg" alt="login">
+        </div>
+        <div class="blog_para">
+            <h3>Build your resume</h3>
+            <p>Make your job applications stand-out from other candidates.</p>
+            <div class="button btn">
+                <button id="start"><a href="/Resume/main.html">Start Now</a></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="row">
+                <ul>
+
+                    <img src="/img/logo.png" alt="logo" style="height: 100px;
+                        width: 150px;">
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Resources</h6>
+                    <li>
+                       <a href="/Resume/main.html">Resume</a> 
+                    </li>
+                    <li><a href="/Resume/main.html">CV</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Product</h6>
+                    <li>
+                       <a href="/pricing page/pricing.html">Price</a> 
+                    </li>
+                    <li> <a href="/Reviews/reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Support</h6>
+                    <li><a href="/contactpage/contactus.html">Contact Us</a></li>
+                    <li>
+                       <a href="/privacy/privacy.html">Privacy</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last_para">
+            <p>&copy; 2024 Chaudhary Brothers & company. All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
+
+</html>
